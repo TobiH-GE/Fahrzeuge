@@ -7,7 +7,7 @@ namespace Fahrzeuge
     class PKW : Auto
     {
         int MaxPersonen;
-        public PKW(int PS, string Marke, int Geschwindigkeit) : base(PS, Marke, Geschwindigkeit)
+        public PKW(int PS, string Marke, int Geschwindigkeit, string Modell, int MaxGeschwindigkeit, int Gewicht) : base(PS, Marke, Geschwindigkeit, Modell, MaxGeschwindigkeit, Gewicht)
         {
             
         }

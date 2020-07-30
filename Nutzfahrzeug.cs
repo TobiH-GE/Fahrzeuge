@@ -6,6 +6,7 @@ namespace Fahrzeuge
 {
     class Nutzfahrzeug : Fahrzeug
     {
- 
+        protected int PS;
+
     }
 }

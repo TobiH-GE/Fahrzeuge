@@ -6,8 +6,8 @@ namespace Fahrzeuge
     {
         static void Main(string[] args)
         {
-            Auto Fahrzeug1 = new Auto(50, "BMW", 130);
-            Gelaendewagen Fahrzeug2 = new Gelaendewagen(80, "Jeep", 100, true);
+            Auto Fahrzeug1 = new Auto(50, "BMW", 130, "i3", 270, 2000);
+            Gelaendewagen Fahrzeug2 = new Gelaendewagen(80, "Jeep", 100, true, "Offroad1", 220, 2500);
             Ebike Fahrzeug3 = new Ebike(250, 100, "Bosch", "Shimano", 8, "Focus", "X-100", 0, 25, 20);
 
             Fahrzeug1.ZeigeDaten();

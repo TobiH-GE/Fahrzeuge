@@ -12,7 +12,7 @@ namespace Fahrzeuge
         protected int Geschwindigkeit;
         protected double Gewicht;
 
-        public int NeueGeschindigkeit
+        public int NeueGeschwindigkeit
         {
             get
             {

@@ -12,6 +12,10 @@ namespace Fahrzeuge
         protected int Geschwindigkeit;
         protected double Gewicht;
 
+        public virtual void ZeigeDaten()
+        {
+
+        }
         public int NeueGeschwindigkeit
         {
             get

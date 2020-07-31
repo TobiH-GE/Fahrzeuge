@@ -4,9 +4,14 @@ using System.Text;
 
 namespace Fahrzeuge
 {
-    class Omnibus
+    class Omnibus : Nutzfahrzeug
     {
         String Typ; // Nahverkehr, Reisebus
         int MaxPersonBefoerderbar;
+
+        public Omnibus()
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Fahrzeuge
 {
@@ -6,24 +7,26 @@ namespace Fahrzeuge
     {
         static void Main(string[] args)
         {
-            dynamic[] AlleFahrzeuge = new dynamic[10];
+            dynamic[] AlleFahrzeuge = new dynamic[4]
+            {
+                new Auto(50, "BMW", 130, "i3", 270, 2000),
+                new Gelaendewagen(80, "Jeep", 100, true, "Offroad1", 220, 2500),
+                new Ebike(250, 100, "Bosch", "Shimano", 8, "Focus", "X-100", 0, 25, 20),
+                new Omnibus()
+            };
 
-            AlleFahrzeuge[0] = new Auto(50, "BMW", 130, "i3", 270, 2000);
-            AlleFahrzeuge[1] = new Gelaendewagen(80, "Jeep", 100, true, "Offroad1", 220, 2500);
-            AlleFahrzeuge[2] = new Ebike(250, 100, "Bosch", "Shimano", 8, "Focus", "X-100", 0, 25, 20);
-            AlleFahrzeuge[3] = new Omnibus();
-
-            AlleFahrzeuge[0].ZeigeDaten();
-            AlleFahrzeuge[1].ZeigeDaten();
-            AlleFahrzeuge[2].ZeigeDaten();
-            AlleFahrzeuge[3].ZeigeDaten();
+            foreach(dynamic EinFahrzeug in AlleFahrzeuge)
+            {
+                EinFahrzeug.ZeigeDaten();
+            }
 
             AlleFahrzeuge[0].NeueGeschwindigkeit = 20;
             AlleFahrzeuge[1].NeueGeschwindigkeit = 30;
 
-            AlleFahrzeuge[0].ZeigeDaten();
-            AlleFahrzeuge[1].ZeigeDaten();
-            AlleFahrzeuge[2].ZeigeDaten();
+            foreach (dynamic EinFahrzeug in AlleFahrzeuge)
+            {
+                EinFahrzeug.ZeigeDaten();
+            }
 
             Console.ReadKey();
         }

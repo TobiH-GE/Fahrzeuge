@@ -9,7 +9,7 @@ namespace Fahrzeuge
         {
             dynamic[] AlleFahrzeuge = new dynamic[4]
             {
-                new Auto(50, "BMW", 130, "i3", 270, 2000),
+                new PKW(50, "BMW", 130, "i3", 270, 2000),
                 new Gelaendewagen(80, "Jeep", 100, true, "Offroad1", 220, 2500),
                 new Ebike(250, 100, "Bosch", "Shimano", 8, "Focus", "X-100", 0, 25, 20),
                 new Omnibus()

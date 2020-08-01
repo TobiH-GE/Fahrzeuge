@@ -11,9 +11,10 @@ namespace Fahrzeuge
         {
             
         }
-        public override void ZeigeDaten()
+        public new void ZeigeDaten()
         {
-            Console.WriteLine("PS: {0} Marke: {1} Geschwindigkeit: {2} ", PS, Marke, Geschwindigkeit);
+            base.ZeigeDaten();
+            Console.WriteLine("MaxPersonen: {0}\n ", MaxPersonen);
         }
     }
 }

@@ -11,9 +11,10 @@ namespace Fahrzeuge
         {
             this.Allradantrieb = Allradantrieb;
         }
-        public override void ZeigeDaten()
+        public new void ZeigeDaten()
         {
-            Console.WriteLine("PS: {0} Marke: {1} Geschwindigkeit: {2} Allradantrieb: {3}", PS, Marke, Geschwindigkeit, Allradantrieb);
+            (this as Fahrzeug).ZeigeDaten();
+            Console.WriteLine("Allradantrieb: {0}\n", Allradantrieb);
         }
     }
 }

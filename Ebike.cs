@@ -23,9 +23,10 @@ namespace Fahrzeuge
             this.MaxGeschwindigkeit = MaxGeschwindigkeit;
             this.Gewicht = Gewicht;
         }
-        public virtual void ZeigeDaten()
+        public new void ZeigeDaten()
         {
-            Console.WriteLine("Reichweite: {0} Marke: {1} Geschwindigkeit: {2} MarkeMotor: {3}", Reichweite, Marke, Geschwindigkeit, MarkeMotor);
+            (this as Fahrzeug).ZeigeDaten();
+            Console.WriteLine("WattstundenAkku: {0} Reichweite: {1} MarkeMotor: {2}\n", WattstundenAkku, Reichweite, MarkeMotor);
         }
     }
 }

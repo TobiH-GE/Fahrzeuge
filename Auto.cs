@@ -17,9 +17,10 @@ namespace Fahrzeuge
             this.MaxGeschwindigkeit = MaxGeschwindigkeit;
             this.Gewicht = Gewicht;
         }
-        public virtual void ZeigeDaten()
+        public new void ZeigeDaten()
         {
-            Console.WriteLine("PS: {0} Marke: {1} Geschwindigkeit: {2} Modell: {3} MaxGeschwindigkeit: {4} Gewicht: {5}", PS, Marke, Geschwindigkeit, Modell, MaxGeschwindigkeit, Gewicht);
+            (this as Fahrzeug).ZeigeDaten();
+            Console.Write("PS: {0} ", PS);
         }
     }
 }

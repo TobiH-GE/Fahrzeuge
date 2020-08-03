@@ -7,7 +7,7 @@ namespace Fahrzeuge
     {
         static void Main(string[] args)
         {
-            dynamic[] AlleFahrzeuge = new dynamic[4]
+            List<Fahrzeug> AlleFahrzeuge = new List<Fahrzeug>()
             {
                 new PKW(50, "BMW", 130, "i3", 270, 2000),
                 new Gelaendewagen(80, "Jeep", 100, true, "Offroad1", 220, 2500),

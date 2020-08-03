@@ -14,7 +14,7 @@ namespace Fahrzeuge
 
         public void ZeigeDaten()
         {
-            Console.Write("Typ: {0} Marke: {1} Modell: {2} MaxGesch: {3} Geschwindigkeit: {4} Gewicht {5} ", this.GetType().Name, Marke, Modell, MaxGeschwindigkeit, Geschwindigkeit, Gewicht);
+            Console.Write("\n\nTyp: {0} Marke: {1} Modell: {2} MaxGesch: {3} Geschwindigkeit: {4} Gewicht {5} ", this.GetType().Name, Marke, Modell, MaxGeschwindigkeit, Geschwindigkeit, Gewicht);
         }
         public int NeueGeschwindigkeit
         {

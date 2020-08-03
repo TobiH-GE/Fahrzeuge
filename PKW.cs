@@ -14,7 +14,7 @@ namespace Fahrzeuge
         public new void ZeigeDaten()
         {
             base.ZeigeDaten();
-            Console.WriteLine("MaxPersonen: {0}\n ", MaxPersonen);
+            Console.Write("MaxPersonen: {0} ", MaxPersonen);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Fahrzeuge
         public new void ZeigeDaten()
         {
             (this as Fahrzeug).ZeigeDaten();
-            Console.WriteLine("WattstundenAkku: {0} Reichweite: {1} MarkeMotor: {2}\n", WattstundenAkku, Reichweite, MarkeMotor);
+            Console.Write("WattstundenAkku: {0} Reichweite: {1} MarkeMotor: {2} ", WattstundenAkku, Reichweite, MarkeMotor);
         }
     }
 }

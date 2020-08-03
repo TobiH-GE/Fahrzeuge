@@ -14,7 +14,7 @@ namespace Fahrzeuge
         public new void ZeigeDaten()
         {
             (this as Fahrzeug).ZeigeDaten();
-            Console.WriteLine("Allradantrieb: {0}\n", Allradantrieb);
+            Console.Write("Allradantrieb: {0} ", Allradantrieb);
         }
     }
 }

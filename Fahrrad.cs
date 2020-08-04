@@ -12,5 +12,10 @@ namespace Fahrzeuge
         {
 
         }
+        public new void ZeigeDaten()
+        {
+            (this as Fahrzeug).ZeigeDaten();
+            Console.Write("Gaenge: {0} HerstellerSchaltung: {1} ", Gaenge, HerstellerSchaltung);
+        }
     }
 }

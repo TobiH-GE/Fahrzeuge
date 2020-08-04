@@ -15,7 +15,7 @@ namespace Fahrzeuge
                 new Omnibus()
             };
 
-            foreach(Fahrzeug EinFahrzeug in AlleFahrzeuge)
+            foreach(dynamic EinFahrzeug in AlleFahrzeuge)
             {
                 EinFahrzeug.ZeigeDaten();
             }
@@ -23,7 +23,7 @@ namespace Fahrzeuge
             AlleFahrzeuge[0].NeueGeschwindigkeit = 20;
             AlleFahrzeuge[1].NeueGeschwindigkeit = 30;
 
-            foreach (Fahrzeug EinFahrzeug in AlleFahrzeuge)
+            foreach (dynamic EinFahrzeug in AlleFahrzeuge)
             {
                 EinFahrzeug.ZeigeDaten();
             }

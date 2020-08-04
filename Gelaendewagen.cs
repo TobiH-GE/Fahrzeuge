@@ -13,7 +13,7 @@ namespace Fahrzeuge
         }
         public new void ZeigeDaten()
         {
-            (this as Fahrzeug).ZeigeDaten();
+            (this as Auto).ZeigeDaten();
             Console.Write("Allradantrieb: {0} ", Allradantrieb);
         }
     }

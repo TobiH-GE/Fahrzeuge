@@ -13,7 +13,7 @@ namespace Fahrzeuge
         }
         public new void ZeigeDaten()
         {
-            base.ZeigeDaten();
+            (this as Auto).ZeigeDaten();
             Console.Write("MaxPersonen: {0} ", MaxPersonen);
         }
     }

@@ -6,7 +6,11 @@ namespace Fahrzeuge
 {
     class Nutzfahrzeug : Fahrzeug
     {
-        protected int PS;
-
+        bool MitAnhaenger;
+        public new void ZeigeDaten()
+        {
+            (this as Fahrzeug).ZeigeDaten();
+            Console.Write("MitAnhaenger: {0} ", MitAnhaenger);
+        }
     }
 }
